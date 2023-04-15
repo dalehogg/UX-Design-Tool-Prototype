@@ -1,0 +1,222 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    z-index: 999;
+    cursor: pointer;
+  .wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1E1F22;
+    width: 100vw;
+    height: 100vh;
+
+    .layers, .selectedItemPropertiesList{
+      height: 100vh;
+      width: 20%;
+      background-color: #303134;
+      z-index: 999;
+    }
+      .leftSection{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        background-color: #303134;
+        z-index: 999;
+        .layerOutput, .layerTitleDesign{
+          width: 200px;
+          border-right: 1px solid black;
+          h1{
+            padding: 15px;
+            color: #ffffff;
+            font-size: 22px;
+            border-bottom: 1px solid black;
+          }
+          .layer{
+            color: #ffffff;
+            padding: 10px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            background-color: #303134;
+            border-bottom: 1px solid black;
+          }
+          .selectedDiv{
+            background-color: #505050;
+          }
+        }
+        .layerOutput:hover{
+          cursor: move;
+        }
+        .layerOutput div{
+          box-shadow: 0px 4px 2px -3px black;
+        }
+        .toolkitBar{
+          box-shadow: 10px 0px 18px -8px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 10px 0px 18px -8px rgba(0,0,0,0.5);
+          -moz-box-shadow: 10px 0px 18px -8px rgba(0,0,0,0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          order: 2;
+          height: 100vh;
+          width: 50px;
+          .ActiveButton{
+            align-self: center;
+            font-size: 35px;
+            color: white;
+          }
+          // .fa-up-down-left-right{
+          //   margin-top: 10px;
+          //   font-size: 27.5px;
+          // }
+          .ActiveButton:active{
+            color: lightgrey;
+          }
+          .shadowInsetButton{
+            color: grey;
+          }
+        }
+      }
+      #DrawLayer{
+          order: 3;
+          background-color: #ffffff;
+          width:500px;
+          height:500px;
+          .rectangle {
+            background-color: #D8D8D8;
+            resize: both;
+            position: absolute;
+          }
+          .resetDiv{
+            position: absolute;
+          }
+          .lockedDimensions{
+            width: auto;
+          }
+          .draggable {
+            border: 1px solid #ccc;
+            display: inline-block;
+            cursor: move;
+            position: absolute;
+          }
+      }
+    .selectedItemPropertiesList{
+      order: 4;
+      box-shadow: -10px 0px 18px -8px rgba(0,0,0,0.5);
+      -webkit-box-shadow: -10px 0px 18px -8px rgba(0,0,0,0.5);
+      -moz-box-shadow: -10px 0px 18px -8px rgba(0,0,0,0.5);
+      letter-spacing: 1px;
+      color: #ffffff;
+      z-index: 999;
+      .selectedName{
+        display: flex;
+        font-size: 22px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 15px;
+        h1{
+          padding: 15px 0px 0px 15px;
+        }
+        .outputName{
+          color: green;
+          text-transform: capitalize;
+        }
+      }
+      .selectedPositionXOutput{
+        display: flex;
+        padding: 20px 20px 0px 20px;
+        .outputX{
+          color: green;
+        }
+      }
+      .selectedPositionYOutput{
+        display: flex;
+        padding: 20px;
+        .outputY{
+          color: green;
+        }
+      }
+      .arrangeGrouping{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 0px 20px 0px;
+
+        .arrangeTopButton, .arrangeBottomButton, .arrangeTopOne, .arrangeBottomOne{
+          padding: 10px;
+          box-shadow: 0px 0px 4px 0px grey;
+        }
+        .arrangeTopButton:active, .arrangeBottomButton:active, .arrangeTopOne:active, .arrangeBottomOne:active{
+          box-shadow: inset 0px 0px 4px 0px grey;
+        }
+      }
+
+    /*
+      TO BE FIXED, FURTHER CODE TO BE ADDED IN JS
+      .toggleLineMatching{
+        display: flex;
+        justify-content: center;
+        .lineMatchingButton{
+          position: relative;
+          z-index: 999;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+      */
+    }
+    .topBar{
+        position: absolute;
+        top: 0;
+        background-color: #303134;
+        width: 100%;
+        height: 6%;
+        border: 1px solid black;
+        z-index: 999;
+        z-index: 999;
+    }
+    .leftSideBar{
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        background-color: #303134;
+        width: 20%;
+        height: 100vh;
+        border-right: 1px solid black;
+        .functionBar{
+          position: relative;
+          float: right;
+          padding-bottom: 100vh;
+          width: 50px;
+          border: 1px solid black;
+        }
+    }
+    .rightSideBar{
+        position: absolute;
+        right: 0;
+        background-color: #303134;
+        width: 20%;
+        z-index: 999;
+        height: 100vh;
+        border-left: 1px solid black;
+    }
+      .shadowButton{
+          width: 80px;
+          padding: 20px;
+          overflow: hidden;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: Tahoma;
+          h1{
+              text-align: center;
+              user-select: none;
+          }
+          .outputName, .outputX, .outputY{
+            color: green;
+            font-style: italic;
+          }
+      }
+
+
+  }
+}

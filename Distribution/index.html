@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+   <head>
+      <meta name='viewport' content='width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0'>
+      <meta charset='utf-8'>
+      <meta name='author' content='Client Name'>
+
+      <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='' crossorigin='anonymous'>
+      <link rel='stylesheet' as='style' href='css/main.css'>
+      <link rel='stylesheet' as='style' href='css/reset.css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   </head>
+   <body class='body'>
+     <!-- <div class="lineMatch lineY ab"></div>
+     <div class="lineMatch lineX ab"></div> -->
+
+     <div id="guide-h" class="guide"></div>
+     <div id="guide-v" class="guide"></div>
+
+     <div class="lineWrapper">
+     </div>
+     <div class='wrapper'>
+       <div id="DrawLayer"></div>
+       <div class="leftSection">
+         <div class="toolkitBar">
+           <i class="fa-solid fa-square button ActiveButton"></i>
+           <!-- <i class="fa-solid fa-up-down-left-right button ActiveButton"></i> -->
+         </div>
+         <div class="layerTitleDesign layers">
+           <h1>Layers</h1>
+           <div class="layerOutput layers">
+
+           </div>
+         </div>
+       </div>
+         <div class="selectedItemPropertiesList">
+
+           <div class="selectedName">
+              <h1>Name:</h1>
+              <h1 class="outputName"></h1>
+           </div>
+           <div class="selectedPositionXOutput">
+              <h1>X:</h1>
+              <h1 class="outputX"></h1>
+           </div>
+           <div class="selectedPositionYOutput">
+              <h1>Y:</h1>
+              <h1 class="outputY"></h1>
+           </div>
+           <div class="arrangeGrouping">
+             <div class="arrangeTopButton">
+                <i class="fa-solid fa-angles-up"></i>
+             </div>
+             <div class="arrangeBottomButton">
+                <i class="fa-solid fa-angles-down"></i>
+             </div>
+             <div class="arrangeTopOne">
+                <i class="fa-solid fa-angle-up"></i>
+             </div>
+             <div class="arrangeBottomOne">
+                <i class="fa-solid fa-angle-down"></i>
+             </div>
+           </div>
+           <!-- TO BE FIXED, CODE NEEDS TO BE ADDED IN JS TO DISABLE LINE MATCHING -->
+           <!-- <div class="toggleLineMatching">
+              <div class="lineMatchingButton extraShadowButton">
+                <i class="fa-solid fa-not-equal"></i>
+              </div>
+           </div> -->
+         </div>
+
+      </div>
+
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+         <script type='text/javascript' src='js/full.js'></script>
+         <!-- <script type='text/javascript' src='../Production/js/scripts.js'></script> -->
+   </body>
+</html>

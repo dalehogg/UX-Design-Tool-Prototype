@@ -1,0 +1,88 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	 margin: 0;
+	 padding: 0;
+	 border: 0;
+	 font-size: 100%;
+	 font: inherit;
+	 vertical-align: baseline;
+	 font-family: Tahoma;
+}
+ * {
+	 margin: 0;
+	 padding: 0;
+}
+ body {
+	 line-height: 1;
+}
+ ol, ul {
+	 list-style: none;
+}
+ blockquote, q {
+	 quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+	 content: '';
+	 content: none;
+}
+ table {
+	 border-collapse: collapse;
+	 border-spacing: 0;
+}
+ h1, h2, h3, h4, h5, h6, p, li, ul, ol, input {
+	 font-smooth: auto;
+	 letter-spacing: 1px;
+}
+ .row {
+	 margin-right: 0px;
+	 margin-left: 0px;
+}
+ .guide {
+	 display: none;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 z-index: 2;
+}
+ #guide-h {
+	 z-index: 2;
+	 border-top: 1px dashed #55f;
+	 width: 100%;
+}
+ #guide-v {
+	 z-index: 92;
+	 border-left: 1px dashed #55f;
+	 height: 100%;
+}
+ .show {
+	 display: block;
+}
+ .hide {
+	 display: none !important;
+}
+ .shadowButton {
+	 box-shadow: 0px 0px 6px 1px grey;
+}
+ .extraShadowButton {
+	 box-shadow: 0px 0px 4px 0px grey;
+}
+ .insetButton {
+	 box-shadow: inset 0px 0px 4px 0px grey;
+}
+ .userNone {
+	 pointer-events: none;
+}
+ .zIndexBottom {
+	 z-index: 0;
+}
+ .drawnItemBorder {
+	 border: 1px solid #a9a9a9;
+}
+ .selectedDiv {
+	 border: 1px solid #000 !important;
+}
+ .ab {
+	 position: absolute;
+}
+ .overide {
+	 display: none;
+}
